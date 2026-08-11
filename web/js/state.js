@@ -1,0 +1,1 @@
+export const state={fileName:"",rawRows:[],headers:[],columns:{},cleanRows:[],model:null,metrics:null,prediction:null,trained:false};export function resetState(){Object.assign(state,{fileName:"",rawRows:[],headers:[],columns:{},cleanRows:[],model:null,metrics:null,prediction:null,trained:false})}
