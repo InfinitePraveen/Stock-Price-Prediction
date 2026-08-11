@@ -1,0 +1,1 @@
+import {fitRidge} from "../web/js/regression.js";const X=[[1],[2],[3],[4],[5]],y=[2,4,6,8,10];const m=fitRidge(X,y,.1);console.assert(Number.isFinite(m.predict([6])),"prediction should be numeric");console.log("regression test passed");
