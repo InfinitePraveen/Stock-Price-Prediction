@@ -1,0 +1,1 @@
+import {buildSamples} from "../web/js/features.js";const rows=Array.from({length:100},(_,i)=>({date:new Date(2025,0,i+1),open:100+i,high:102+i,low:99+i,close:100+i,volume:1000+i}));console.assert(buildSamples(rows).length>50,"feature builder failed");console.log("feature test passed");
