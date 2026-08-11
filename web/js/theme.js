@@ -1,0 +1,1 @@
+import { loadTheme, saveTheme } from "./storage.js"; export function initTheme() { document.documentElement.dataset.theme = loadTheme(); document.querySelector("#theme").onclick = () => { const n = document.documentElement.dataset.theme === "dark" ? "light" : "dark"; document.documentElement.dataset.theme = n; saveTheme(n) } }
