@@ -1,0 +1,1 @@
+import {parseCSV,detectColumns} from "../web/js/csv.js";const r=parseCSV("Date,Open,High,Low,Close,Volume\n2025-01-01,1,2,0.5,1.5,100");const c=detectColumns(r.headers);console.assert(c.close==="Close"&&c.date==="Date","column detection failed");console.log("csv test passed");
