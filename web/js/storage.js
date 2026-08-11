@@ -1,0 +1,1 @@
+const KEY="stockpredict-theme";export function loadTheme(){return localStorage.getItem(KEY)||"light"}export function saveTheme(v){localStorage.setItem(KEY,v)}
