@@ -1,0 +1,1 @@
+import {trainAndPredict} from "../web/js/model.js";const rows=Array.from({length:140},(_,i)=>({date:new Date(2025,0,i+1),open:100+i,high:102+i,low:99+i,close:100+i,volume:1000+i}));const r=trainAndPredict(rows);console.assert(Number.isFinite(r.prediction.predictedClose),"forecast should be numeric");console.log("model test passed");
