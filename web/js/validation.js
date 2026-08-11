@@ -1,0 +1,1 @@
+export function validateRows(rows){if(!Array.isArray(rows)||rows.length<80)throw Error("At least 80 valid observations are recommended.");return true}
