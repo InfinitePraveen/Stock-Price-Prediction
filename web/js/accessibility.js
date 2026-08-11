@@ -1,0 +1,1 @@
+export function announce(message){let el=document.querySelector("#sr-status");if(!el){el=document.createElement("div");el.id="sr-status";el.setAttribute("aria-live","polite");el.style.position="absolute";el.style.left="-9999px";document.body.appendChild(el)}el.textContent=message}
