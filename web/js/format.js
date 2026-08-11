@@ -1,0 +1,1 @@
+export const rupee=v=>Number.isFinite(v)?`₹ ${v.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`:"—";export const percent=v=>Number.isFinite(v)?`${(v*100).toFixed(2)}%`:"—";
